@@ -1,6 +1,10 @@
 import OrderSummary from './assets/components/OrderSummary'
 function App() {
-  return <OrderSummary />
+  return (
+    <main>
+      <OrderSummary />
+    </main>
+  )
 }
 
 export default App

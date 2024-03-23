@@ -1,6 +1,6 @@
 # Order Summary Component
 
-This is a React component designed to display an order summary. It provides a clean and visually appealing way to present order details to users.
+This is a React component designed to display an order summary. It provides a clean and visually appealing way to present order details to users. A challenge by Frontend Mentor.
 
 ## Features
 
