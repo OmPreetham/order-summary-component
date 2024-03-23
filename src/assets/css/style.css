@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  /* Primary */
+
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  /* Neutral */
+
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+
+  /* Fonts */
+
+  --font-small: 500;
+  --font-mid: 700;
+  --font-high: 900;
+
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-color: var(--pale-blue);
+  background-repeat: no-repeat;
+  height: 100vh;
+  text-align: center;
+}
+
+main {
+  width: 100%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: clamp(25rem, 33vw, 27rem);
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px var(--pale-blue);
+}
+
+.hero-illustration {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.order-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5em;
+}
+
+.summary-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 95%;
+  margin-bottom: 20px;
+}
+
+.summary-container p {
+  font-size: 1rem;
+  font-weight: var(--font-small);
+  color: var(--desaturated-blue);
+  line-height: 1.8;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: var(--dark-blue);
+  font-weight: var(--font-high);
+}
+
+.plans-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  background-color: var(--very-pale-blue);
+  width: 95%;
+  padding: 1.5em;
+  border-radius: 10px;
+  margin-bottom: 1.4em;
+}
+
+.plans-details-container {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  justify-content: flex-start;
+}
+
+.plan-cost-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  font-size: 1rem;
+}
+
+.annual-plan {
+  font-weight: var(--font-high);
+  color: var(--dark-blue);
+}
+
+.plan-cost {
+  color: var(--desaturated-blue);
+  font-weight: var(--font-small);
+}
+
+.change-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--font-mid);
+  font-size: 0.9rem;
+  color: var(--bright-blue);
+}
+
+.change:visited {
+  color: var(--bright-blue);
+}
+.change:active,
+.change:focus {
+  color: rgba(0, 0, 255, 0.428);
+  text-decoration: none;
+}
+
+.music-icon-container {
+  width: 30%;
+}
+
+.payment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+button {
+  background-color: var(--bright-blue);
+  color: var(--very-pale-blue);
+  font-weight: var(--font-mid);
+  padding: 1.2em 6.5em;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  box-shadow: 5px 5px 20px var(--desaturated-blue);
+  cursor: pointer;
+}
+
+button:active,
+button:focus {
+  background-color: rgba(0, 0, 255, 0.428);
+}
+
+.cancel {
+  text-decoration: none;
+  color: var(--desaturated-blue);
+  font-weight: var(--font-mid);
+  font-size: 1rem;
+}
+
+.cancel:active,
+.cancel:focus {
+  color: var(--dark-blue);
+}
