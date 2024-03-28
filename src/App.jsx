@@ -1,4 +1,4 @@
-import OrderSummary from './assets/components/OrderSummary'
+import OrderSummary from './components/OrderSummary'
 function App() {
   return (
     <main>
