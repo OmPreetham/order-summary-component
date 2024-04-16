@@ -4,7 +4,7 @@ const OrderSummary = () => {
       <div className="hero-container">
         <img
           className="hero-illustration"
-          src="/images/illustration-hero.svg"
+          src="./images/illustration-hero.svg"
           alt="Hero Illustration"
         />
       </div>
@@ -21,7 +21,7 @@ const OrderSummary = () => {
             <div className="music-icon-container">
               <img
                 className="music-icon"
-                src="/images/icon-music.svg"
+                src="./images/icon-music.svg"
                 alt="Music Icon SVG"
               />
             </div>
